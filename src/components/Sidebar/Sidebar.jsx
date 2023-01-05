@@ -5,14 +5,14 @@ import "./Sidebar.css";
 
 export default function Sidebar() {
   return (
-    <div className="Sidebar p-3">
-      <div className="title d-flex align-items-center">
+    <div className="Sidebar p-0">
+      <div className="title d-flex align-items-center pt-3 ps-3">
         <div className="logo bg-purple p-2 rounded">
           <img src={Logo} alt="Logo" />
         </div>
         <h6 className="fw-bold fs-3 ms-2 mt-2 text-dark">Motiv.</h6>
       </div>
-      <div className="content mt-5">
+      <div className="content mt-4 pt-3 ps-3">
         <ul className="px-0">
           <li className="active">
             <FontAwesomeIcon icon={faTableCellsLarge}/>
