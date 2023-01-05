@@ -1,5 +1,53 @@
+import { faBagShopping, faCalendarDays, faCar, faCartShopping, faCompass, faMessage, faTableCellsLarge, faWandMagicSparkles } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Logo from "../../assets/imgs/Vector 1.png";
+import "./Sidebar.css";
+
 export default function Sidebar() {
   return (
-    <div className="Sidebar">Sidebar</div>
+    <div className="Sidebar p-3">
+      <div className="title d-flex align-items-center">
+        <div className="logo bg-purple p-2 rounded">
+          <img src={Logo} alt="Logo" />
+        </div>
+        <h6 className="fw-bold fs-3 ms-2 mt-2 text-dark">Motiv.</h6>
+      </div>
+      <div className="content mt-5">
+        <ul className="px-0">
+          <li className="active">
+            <FontAwesomeIcon icon={faTableCellsLarge}/>
+            <span className="ms-2">Dashboard</span>
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faCompass}/>
+            <span className="ms-2">Assets</span>
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faCar}/>
+            <span className="ms-2">Booking</span>
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faBagShopping}/>
+            <span className="ms-2">Sell Cars</span>
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faCartShopping}/>
+            <span className="ms-2">Buy Cars</span>
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faWandMagicSparkles}/>
+            <span className="ms-2">Services</span>
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faCalendarDays}/>
+            <span className="ms-2">Calender</span>
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faMessage}/>
+            <span className="ms-2">Messages</span>
+          </li>
+        </ul>
+      </div>
+    </div>
   )
 }

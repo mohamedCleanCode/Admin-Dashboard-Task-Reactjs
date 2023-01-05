@@ -1,0 +1,18 @@
+.Sidebar {
+  background-color: var(--bg-color-white);
+  min-height: calc(100vh - 60px);
+}
+.Sidebar .content ul li {
+  width: 70%;
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: #5f6165;
+  cursor: pointer;
+  transform: 0.3s;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.Sidebar .content ul li.active,
+.Sidebar .content ul li:hover {
+  background-color: #f3f5f8;
+}
