@@ -30,3 +30,6 @@ body {
 .bg-purple {
   background-color: var(--purple-color);
 }
+.pointer {
+  cursor: pointer;
+}
