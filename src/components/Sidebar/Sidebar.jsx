@@ -1,4 +1,15 @@
-import { faBagShopping, faCalendarDays, faCar, faCartShopping, faCompass, faMessage, faTableCellsLarge, faWandMagicSparkles } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBagShopping,
+  faCalendarDays,
+  faCar,
+  faCartShopping,
+  faCircleLeft,
+  faCompass,
+  faGear,
+  faMessage,
+  faTableCellsLarge,
+  faWandMagicSparkles,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/imgs/Vector 1.png";
@@ -16,39 +27,49 @@ export default function Sidebar() {
       <div className="content mt-4 pt-3 ps-3">
         <ul className="px-0">
           <Link to="/" className="active">
-            <FontAwesomeIcon icon={faTableCellsLarge}/>
+            <FontAwesomeIcon icon={faTableCellsLarge} />
             <span className="ms-2">Dashboard</span>
           </Link>
-          <li>
-            <FontAwesomeIcon icon={faCompass}/>
+          <Link to="/assets">
+            <FontAwesomeIcon icon={faCompass} />
             <span className="ms-2">Assets</span>
-          </li>
+          </Link>
           <Link to="/booking">
-            <FontAwesomeIcon icon={faCar}/>
+            <FontAwesomeIcon icon={faCar} />
             <span className="ms-2">Booking</span>
           </Link>
-          <li>
-            <FontAwesomeIcon icon={faBagShopping}/>
+          <Link to="/sellcars">
+            <FontAwesomeIcon icon={faBagShopping} />
             <span className="ms-2">Sell Cars</span>
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faCartShopping}/>
+          </Link>
+          <Link to="/buycars">
+            <FontAwesomeIcon icon={faCartShopping} />
             <span className="ms-2">Buy Cars</span>
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faWandMagicSparkles}/>
+          </Link>
+          <Link to="/services">
+            <FontAwesomeIcon icon={faWandMagicSparkles} />
             <span className="ms-2">Services</span>
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faCalendarDays}/>
+          </Link>
+          <Link to="/calender">
+            <FontAwesomeIcon icon={faCalendarDays} />
             <span className="ms-2">Calender</span>
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faMessage}/>
+          </Link>
+          <Link to="/messages">
+            <FontAwesomeIcon icon={faMessage} />
             <span className="ms-2">Messages</span>
-          </li>
+          </Link>
+        </ul>
+        <ul className="px-0 mt-5">
+          <Link to="/settings">
+            <FontAwesomeIcon icon={faGear} />
+            <span className="ms-2">Settings</span>
+          </Link>
+          <Link to="/logout">
+            <FontAwesomeIcon icon={faCircleLeft} />
+            <span className="ms-2">Log out</span>
+          </Link>
         </ul>
       </div>
     </div>
-  )
+  );
 }

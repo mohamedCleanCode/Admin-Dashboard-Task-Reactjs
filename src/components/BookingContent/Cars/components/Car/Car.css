@@ -1,0 +1,17 @@
+.Car svg {
+  color: var(--purple-color);
+}
+.right-15 {
+  right: 15px;
+}
+.Car img {
+  height: 100px;
+}
+.heart {
+  top: 15px;
+  right: 20px;
+  font-size: 20px;
+}
+.heart svg {
+  color: red;
+}

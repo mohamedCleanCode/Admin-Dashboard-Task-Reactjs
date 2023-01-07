@@ -2,7 +2,8 @@
   background-color: var(--bg-color-white);
   min-height: calc(100vh - 60px);
 }
-.Sidebar .content ul li {
+.Sidebar .content ul a {
+  display: block;
   width: 70%;
   padding: 5px 10px;
   border-radius: 8px;
@@ -12,7 +13,7 @@
   margin-bottom: 10px;
   font-size: 14px;
 }
-.Sidebar .content ul li.active,
-.Sidebar .content ul li:hover {
+.Sidebar .content ul a.active,
+.Sidebar .content ul a:hover {
   background-color: #f3f5f8;
 }

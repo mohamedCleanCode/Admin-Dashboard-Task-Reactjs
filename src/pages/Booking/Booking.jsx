@@ -15,10 +15,9 @@ export default function Booking() {
           <Sidebar />
         </div>
         <div className="col-9 pe-2 ps-0">
-          <BookingContent/>
+          <BookingContent />
         </div>
       </div>
-      <BookingContent/>
     </div>
-  )
+  );
 }

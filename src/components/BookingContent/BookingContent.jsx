@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar"
+import Cars from "./Cars"
 import Settings from "./components/Settings"
 import Tilte from "./components/Title"
 
@@ -10,6 +11,7 @@ export default function BookingContent() {
       <Navbar/>
       <Tilte title="Booking"/>
       <Settings/>
+      <Cars/>
     </div>
   )
 }
