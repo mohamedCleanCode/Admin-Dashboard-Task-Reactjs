@@ -1,5 +1,6 @@
 import { faBagShopping, faCalendarDays, faCar, faCartShopping, faCompass, faMessage, faTableCellsLarge, faWandMagicSparkles } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/imgs/Vector 1.png";
 import "./Sidebar.css";
 
@@ -14,18 +15,18 @@ export default function Sidebar() {
       </div>
       <div className="content mt-4 pt-3 ps-3">
         <ul className="px-0">
-          <li className="active">
+          <Link to="/" className="active">
             <FontAwesomeIcon icon={faTableCellsLarge}/>
             <span className="ms-2">Dashboard</span>
-          </li>
+          </Link>
           <li>
             <FontAwesomeIcon icon={faCompass}/>
             <span className="ms-2">Assets</span>
           </li>
-          <li>
+          <Link to="/booking">
             <FontAwesomeIcon icon={faCar}/>
             <span className="ms-2">Booking</span>
-          </li>
+          </Link>
           <li>
             <FontAwesomeIcon icon={faBagShopping}/>
             <span className="ms-2">Sell Cars</span>

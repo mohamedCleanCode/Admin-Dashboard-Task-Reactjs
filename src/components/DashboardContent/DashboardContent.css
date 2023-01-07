@@ -1,0 +1,26 @@
+/* .DashboardContent .row .col-3:first-child .CardFeatures {
+  background-color: var(--purple-color);
+}
+.DashboardContent .row .col-3:nth-child(2) .CardFeatures {
+  color: black;
+}
+.DashboardContent .row .col-3:nth-child(2) .CardFeatures .icon {
+  color: #ff000085;
+  background-color: #ff00002e;
+}
+.DashboardContent .row .col-3:nth-child(2) .CardFeatures .ratio::before {
+  border-color: #eee #eee transparent #eee;
+}
+.DashboardContent .row .col-3:nth-child(2) .CardFeatures .ratio::after {
+  border-color: #ff000085 transparent transparent #ff000085;
+}
+.DashboardContent .row .col-3:nth-child(3) .CardFeatures .icon {
+  color: rgb(81, 16, 204);
+  background-color: #5110cc24;
+}
+.DashboardContent .row .col-3:nth-child(3) .CardFeatures .ratio::before {
+  border-color: #eee #eee transparent #eee;
+}
+.DashboardContent .row .col-3:nth-child(3) .CardFeatures .ratio::after {
+  border-color: transparent transparent transparent rgb(81, 16, 204);
+} */

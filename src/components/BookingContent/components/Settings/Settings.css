@@ -1,0 +1,27 @@
+.Settings button {
+  border-radius: 16px;
+  cursor: pointer;
+  position: relative;
+}
+.Settings button::after {
+  content: "";
+  position: absolute;
+  top: 62%;
+  transform: translateY(-50%);
+  right: 12px;
+  border-width: 8px;
+  border-color: #eee transparent transparent transparent;
+  border-style: solid;
+}
+.Settings .icons svg {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.Settings .icons svg:last-child {
+  margin-right: 0;
+  color: white;
+  background-color: var(--purple-color);
+}
