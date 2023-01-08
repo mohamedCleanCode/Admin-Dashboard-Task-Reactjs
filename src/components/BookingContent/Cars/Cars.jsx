@@ -5,6 +5,7 @@ import car3 from "../../../assets/imgs/booking-imgs/car-3.png";
 import car4 from "../../../assets/imgs/booking-imgs/car-4.png";
 import car5 from "../../../assets/imgs/booking-imgs/car-5.png";
 import car6 from "../../../assets/imgs/booking-imgs/car-6.png";
+import "./Cars.css";
 import Car from "./components/Car";
 
 export default function Cars() {

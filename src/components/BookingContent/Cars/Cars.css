@@ -1,0 +1,3 @@
+.Cars .col-4:nth-child(2) .Car .heart svg {
+  color: red;
+}

@@ -11,11 +11,25 @@ import {
   faWandMagicSparkles,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/imgs/Vector 1.png";
 import "./Sidebar.css";
 
 export default function Sidebar() {
+  useEffect(() => {
+    const links = document.querySelectorAll(".links a");
+    links.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        links.forEach((link) => {
+          link.classList.remove("active");
+        });
+        e.target.classList.add("active");
+        console.log(e.target);
+      });
+    });
+    console.log(links);
+  });
   return (
     <div className="Sidebar p-0">
       <div className="title d-flex align-items-center pt-3 ps-3">
@@ -25,7 +39,7 @@ export default function Sidebar() {
         <h6 className="fw-bold fs-3 ms-2 mt-2 text-dark">Motiv.</h6>
       </div>
       <div className="content mt-4 pt-3 ps-3">
-        <ul className="px-0">
+        <ul className="px-0 links">
           <Link to="/" className="active">
             <FontAwesomeIcon icon={faTableCellsLarge} />
             <span className="ms-2">Dashboard</span>
@@ -59,7 +73,7 @@ export default function Sidebar() {
             <span className="ms-2">Messages</span>
           </Link>
         </ul>
-        <ul className="px-0 mt-5">
+        <ul className="px-0 mt-5 links">
           <Link to="/settings">
             <FontAwesomeIcon icon={faGear} />
             <span className="ms-2">Settings</span>
