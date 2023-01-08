@@ -1,26 +1,31 @@
-/* .DashboardContent .row .col-3:first-child .CardFeatures {
+.DashboardContent .row .col-3:first-child .CardFeatures {
   background-color: var(--purple-color);
-}
-.DashboardContent .row .col-3:nth-child(2) .CardFeatures {
-  color: black;
+  color: white;
 }
 .DashboardContent .row .col-3:nth-child(2) .CardFeatures .icon {
-  color: #ff000085;
-  background-color: #ff00002e;
+  background-color: #ff000014;
+  color: #ff00007a;
 }
-.DashboardContent .row .col-3:nth-child(2) .CardFeatures .ratio::before {
-  border-color: #eee #eee transparent #eee;
+.DashboardContent .row .col-3:nth-child(2) .circle-container__progress {
+  stroke-dasharray: 80 100;
 }
-.DashboardContent .row .col-3:nth-child(2) .CardFeatures .ratio::after {
-  border-color: #ff000085 transparent transparent #ff000085;
+/* .DashboardContent .col-3:nth-child(3) .stop1 {
+  stop-color: #ff7b7b;
 }
-.DashboardContent .row .col-3:nth-child(3) .CardFeatures .icon {
-  color: rgb(81, 16, 204);
-  background-color: #5110cc24;
-}
-.DashboardContent .row .col-3:nth-child(3) .CardFeatures .ratio::before {
-  border-color: #eee #eee transparent #eee;
-}
-.DashboardContent .row .col-3:nth-child(3) .CardFeatures .ratio::after {
-  border-color: transparent transparent transparent rgb(81, 16, 204);
+.DashboardContent .col-3:nth-child(3) .stop2 {
+  stop-color: #ff7b7b;
 } */
+.DashboardContent .row .col-3:nth-child(3) .CardFeatures .icon {
+  background-color: #a162f763;
+  color: var(--purple-color);
+}
+.DashboardContent .row .col-3:nth-child(3) .circle-container__progress {
+  stroke-dasharray: 10 100;
+}
+.DashboardContent .row .col-3:nth-child(4) .CardFeatures .icon {
+  background-color: #ffff0012;
+  color: yellow;
+}
+.DashboardContent .row .col-3:nth-child(4) .circle-container__progress {
+  stroke-dasharray: 25 100;
+}

@@ -1,14 +1,13 @@
 .CardFeatures {
   width: 85%;
   background-color: white;
-  color: white;
   text-align: center;
   border-radius: 8px;
   padding: 25px 0;
+  position: relative;
 }
 .CardFeatures .icon {
   font-size: 22px;
-  color: white;
   background-color: rgb(148 90 148 / 28%);
   padding: 5px;
   border-radius: 50%;
@@ -17,13 +16,54 @@
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 25px;
+  color: black;
 }
 .CardFeatures .ratio {
+  position: absolute;
   font-weight: bold;
   font-size: 22px;
-  position: relative;
   border-radius: 50%;
   width: fit-content;
-  margin: 20px auto 0;
   padding: 10px;
+  left: 50%;
+  top: 67%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+/* svg {
+  filter: drop-shadow(0 0 10px rgb(0 0 0 / 0.4));
+} */
+.circle-container {
+  width: 115px;
+  height: 115px;
+  transform: rotate(-225deg);
+  fill: none;
+  stroke: silver;
+  stroke-dasharray: 75 100;
+  stroke-linecap: round;
+}
+
+.circle-container__background {
+  fill: none;
+  stroke: silver;
+  stroke-width: 2;
+  stroke-dasharray: 75 100;
+  stroke-linecap: round;
+}
+
+.circle-container__progress {
+  fill: none;
+  stroke-linecap: round;
+  stroke: url(#gradient);
+  stroke-dasharray: 45 100;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.CardFeatures .stop1 {
+  stop-color: white;
+}
+
+.CardFeatures .stop2 {
+  stop-color: white;
 }
